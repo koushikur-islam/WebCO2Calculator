@@ -1,0 +1,1 @@
+export const isProductionMode = process.env.NEXT_PUBLIC_APP_ENV === "Production";

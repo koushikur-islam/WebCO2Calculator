@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary-color: #16A34A;
+    --light-color: #E9EFC0;
+    --font-color: #383838;
+    --font-color-muted: #7e7e7e;
+    --muted-bg: #dfdfdf;
+    --required-red: #ff4d4f;
+    --danger: #DC2626;
+    --font-color: #333333;
+    --font-color-muted: #919191;
+    --input-bg: #F2F2F2;
+}
+
+* {
+    overflow-x: hidden !important;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    font-size: 15px;
+    font-weight: normal;
+    font-family: 'Titillium Web', sans-serif;
+    color: var(--font-color);
+}
+
+button {
+    outline: 0;
+    box-shadow: none;
+}
+
+.raleway-font {
+    font-family: 'Raleway', sans-serif;
+}
+
+.titilium-font {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.limited-box {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    overflow-y: auto;
+}
+
+.ant-btn-default {
+    background-color: var(--primary-color);
+    transition: 0.4s ease-in-out;
+}
+
+.ant-btn-default:not(:disabled):hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    box-shadow: none !important;
+    color: #fff;
+}
+
+.ant-input,
+.ant-input-number,
+.ant-picker {
+    background-color: var(--input-bg);
+    border: none !important;
+}
+
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    background-color: var(--input-bg);
+    border: 0;
+    height: 52px;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.ant-input-affix-wrapper {
+    background-color: var(--input-bg);
+    border: 0;
+}
+
+.ant-input-group-addon {
+    display: none !important;
+}
+
+.ant-form-item {
+    margin: 17px 0px;
+}
+
+.ant-form-item .ant-form-item-label>label {
+    color: var(--font-color-muted);
+    font-size: 15px;
+}

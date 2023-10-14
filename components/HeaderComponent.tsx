@@ -12,7 +12,7 @@ export default function HeaderComponent() {
                     </Link>
                 </div>
                 <div>
-                    <Button type='primary' className=' text-white border-green-600 px-8 pt-1 m-0 p-0' style={{ backgroundColor: 'var(--primary-color)' }}>FAQ</Button>
+                    <Button type='primary' className=' text-white border-green-600 px-8 pt-1 m-0 p-0 mr-2' style={{ backgroundColor: 'var(--primary-color)' }}>FAQ</Button>
                 </div>
             </div>
         </div>

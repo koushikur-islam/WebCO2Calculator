@@ -23,15 +23,20 @@ export default function Home() {
     }
     else {
       setIsCalculating(true)
-      await calculateCarbonAsync(values).then((res: any) => {
-        if (res?.status == 200) {
-          setResult(res?.data)
-        }
-        setIsCalculating(false)
+      await fetch("/api/calculate", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ url: values?.url }),
       })
-        .catch((err: any) => {
-          MessageParser.error('Something went wrong when calculating carbon data!')
+        .then(async (res) => {
+          setResult(await res.json())
           setIsCalculating(false)
+        })
+        .catch(err => {
+          MessageParser.error('Something went wrong when calculating carbon footprint. Try again later!')
+          console.log(err)
         })
     }
 

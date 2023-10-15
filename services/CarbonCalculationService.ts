@@ -10,7 +10,8 @@ export const calculateCarbonAsync = async (data: any) => {
             'Content-Type': 'application/json',
         },
     };
-    const url = "https://hwq5ugwm78.execute-api.us-east-1.amazonaws.com/prod/carbonapi?url=" + data?.url;
 
-    return axios.get(url, config);
+    const url = "https://4zcxpkfla4.execute-api.us-east-1.amazonaws.com/prod/carbon?url=" + data;
+    
+    return await fetch(url)
 };

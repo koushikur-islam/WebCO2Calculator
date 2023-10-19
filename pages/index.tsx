@@ -46,7 +46,7 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Carbon Calculator
+          Eco Browse
         </title>
       </Head>
       <div className="limited-box text-center overflow-auto px-2">
@@ -107,16 +107,16 @@ export default function Home() {
 
                 <div className="flex mb-10">
                   <div className="flex-1 bg-green-50 mr-3 rounded-2xl p-7">
-                    <div className="text-center text-xl">
+                    <div className="text-center text-xl  overflow-y-hidden">
                       <b className="text-3xl font-bold text-green-600">{(Math.round(result?.carbon_footprint * 100) / 100).toFixed(2)}</b> gm
                     </div>
-                    <p className="pt-5 text-center">
+                    <p className="pt-5 text-center  overflow-y-hidden">
                       Each visit to this page contributes to {(Math.round(result?.carbon_footprint * 100) / 100).toFixed(2)} grams of Co2 emmissions.
                     </p>
                   </div>
 
                   <div className="flex-1 bg-green-50 mr-3 rounded-2xl p-7">
-                    <div className="text-center text-xl">
+                    <div className="text-center text-xl  overflow-y-hidden">
                       <b className="text-3xl font-bold text-green-600">
                         {
                           result?.green ?
@@ -126,7 +126,7 @@ export default function Home() {
                         }
                       </b>
                     </div>
-                    <p className="pt-5 text-center">
+                    <p className="pt-5 text-center  overflow-y-hidden">
                       This webpage {result?.green ? 'does not' : ''}  appears to be hosted on Green Hosting.
                     </p>
                   </div>

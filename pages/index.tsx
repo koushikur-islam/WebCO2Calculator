@@ -119,7 +119,7 @@ export default function Home() {
                     <div className="text-center text-xl  overflow-y-hidden">
                       <b className="text-3xl font-bold text-green-600">
                         {
-                          result?.green ?
+                          !result?.green ?
                             <DislikeOutlined />
                             :
                             <LikeOutlined />

@@ -127,7 +127,7 @@ export default function Home() {
                       </b>
                     </div>
                     <p className="pt-5 text-center  overflow-y-hidden">
-                      This webpage {result?.green ? 'does not' : ''}  appears to be hosted on Green Hosting.
+                      This webpage {result?.green ? 'does' : 'does not'}  appears to be hosted on Green Hosting.
                     </p>
                   </div>
                 </div>
